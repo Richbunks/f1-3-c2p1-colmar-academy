@@ -1,0 +1,360 @@
+html {
+  font-size: 16px;
+     
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    line-height: 1.5;
+    color: rgb(50, 51, 50);
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+
+h2  {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.3;
+    font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1024px ) {
+    h1 {font-size: 3rem;}
+}
+
+
+/* Header stlyes */
+header {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.company {
+  display: flex;
+  align-items: center;    
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.company span:last-child {
+    color: rgb(165, 165, 168);
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: 1.5rem;
+  font-size: 1.2rem;
+  height: 100%;
+}
+
+nav ul li {
+    padding-top: 1.15rem;
+}
+
+nav ul li:nth-child(1n+2){
+  border-left: 1rem solid rgb(125, 255, 251);
+}
+
+@media only screen and (min-width: 581px ) {
+    .icon.mobile {display: none;}
+    
+}
+
+
+@media only screen and (max-width: 580px ) {
+    
+    .company span {display: none;}
+    nav li {display: none;}
+    .company {width: 100%; display: flex; justify-content: space-between;}
+}
+
+
+/* banner */
+.banner {
+  background-color: rgb(202, 204, 203);
+}
+
+.divide-left {
+  width: 60%;
+}
+
+.main-image {
+
+  height: auto;
+  padding: 2rem 1.5rem;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto%;
+}
+
+.divide-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .divide-right {
+  
+  justify-content:  center;
+  padding-left: 1.5rem;     
+}
+
+.banner .divide-right h1,h2 {
+    padding-right: 5rem;
+}
+
+.btn {
+    text-align: center;
+    height: auto;
+    padding: 0.5rem 0;
+    background-color: grey;
+    color: white;
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+
+.btn a {
+    color: white; 
+}
+
+
+
+@media only screen and (max-width: 580px ) {
+    .banner {flex-direction: column;}
+    .banner .divide-left {width: 100%;}
+    .banner .divide-right {width: auto; padding-bottom: 2rem;padding-right: 1.5rem;}
+    .main-image {padding: 0 0 2rem 0;}
+    .banner .divide-right h1 {padding-bottom: 2rem;}
+    .btn {width: 100%;}
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: rgb(226, 229, 229);
+}
+
+h1.content-title {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.author {
+  padding-top: 2rem;
+}
+
+.content .divide-right {
+  
+  padding-top: 1rem;    
+  border-left: 1px solid rgb(205, 206, 209);
+    
+}
+
+.article {
+  display: flex;    
+}
+
+.content .article:first-child {
+    border-bottom: 1px solid rgb(205, 206, 209);
+}
+
+.content .article:last-child {
+    background-color: rgb(202, 204, 203);
+}
+
+.article-image {
+  width: 35%;
+  height: auto;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.article-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 1rem auto 2.5rem;    
+}
+
+.article-text h2 {
+    font-size: 1.8rem;
+}
+
+.article-text p {
+  font-size: 1.2rem;
+  font-weight: 300;    
+}
+
+@media only screen and (min-width: 581px ) {
+    .content .mobile {display: none;}
+}
+
+@media only screen and (max-width: 580px ) {
+    .content .divide-left {display: none;}
+    .content .divide-right {width: 100%; padding: 1rem;}
+    .content .article {flex-direction: column; padding-bottom: 2rem;}
+    .article-image {width: 100%;}
+    .content .article img {width: 100%; margin: auto;}
+    .content .desktop {display: none;}
+    .content .mobile {width: 100%;}
+    .content .article-text {width: 80%; margin-left: 1rem; padding-top: 2rem;}
+    .content .article:last-child {background-color: rgb(226, 229, 229);}        
+}
+
+/* Learning section style */
+
+.learning {
+    background-color: rgb(202, 204, 203);
+    flex-direction: column; 
+    align-items: center;
+}
+
+.top-title {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.course-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    margin; auto 0;
+}
+
+.course {
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+}
+
+.subject {
+    padding: 1rem 1.5rem 1.5rem 1rem;
+}
+
+.subject h3 {
+    padding-bottom: 1rem;
+}
+
+.subject h4,p {
+    color: rgb(145, 146, 148);
+}
+
+subject,p  {
+    padding: 0.5rem 0;
+    font-weight: 300;
+}
+
+
+@media only screen and (max-width: 580px ) {
+    .learning {background-color: rgb(230, 229, 229); padding-bottom: 2rem; border-top: 1px solid rgb(205, 206, 209);border-bottom: 1px solid rgb(205, 206, 209);}
+    .course-gallery {flex-direction: column;}
+    .course {width: auto; background-color: rgb(202, 204, 203); margin-bottom: 0.5rem;}
+    .subject {padding: 1rem 1rem 1.5rem 1rem;}
+    .subject h3 {padding-bottom: 0;}
+    .course img {display: none;}
+    .learning .subject p {display: none;}
+}
+
+/* Exhibit section style */
+
+.exhibit .top-title{
+    background-color: rgb(226, 229, 229);
+   
+}
+
+.exhibit {
+    padding-bottom: 2rem;
+}
+
+.section.exhibit  {
+    border-bottom: 1px solid rgb(205, 206, 209); 
+}
+
+.exhibit .divide-left {
+    width: 60%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.exhibit video {
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.exhibit .divide-left p {
+    padding-top: 0.5rem;
+}
+
+.exhibit .article:first-child {
+    background-color: rgb(202, 204, 203);
+}
+
+@media only screen and (max-width: 580px ) {
+    .exhibit {background-color: rgb(226, 229, 229); padding-bottom: 1.5rem; }
+    .exhibit .divide-left {width: 100%; padding-left: 0; padding-right: 0;}
+    .exhibit h3 {display: none;}
+    .exhibit .divide-right {display: none;}
+    .exhibit p {display: none;}
+}
+
+/* Footer Style */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem 4rem 1.5rem;
+    
+}
+
+@media only screen and (max-width: 580px ) {
+    footer {background-color: rgb(226, 229, 229);}
+    footer {margin: 1rem 1.5rem;}
+
+    footer h4:last-child {display: none;}
+}
+
+
